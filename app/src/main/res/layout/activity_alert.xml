@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/alert1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert 1" />
+
+        <Button
+            android:id="@+id/alert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert 2" />
+
+        <Button
+            android:id="@+id/alert3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert 3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alert_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:text="100 mb"
+                android:textSize="32sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="#CEE310"
+                android:text="Podklyuchitsya" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#BC80CBC4"
+                android:padding="5dp"
+                android:text="Podelitsiya" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
